@@ -6,5 +6,19 @@
     <script src="script.js"></script>
   </head>
   <body>
+    <!-- 倒計時重新載入 -->
+    <script type="text/javascript">
+      setTimeout("countdown()", 60000);
+        function countdown() {
+        var s = document.getElementById("timer");
+        s.innerHTML = s.innerHTML - 1;
+        if (s.innerHTML == 0)
+        window.location = "https://ray000000.github.io";
+        else
+      setTimeout("countdown()", 60000);
+      }
+    </script>
+    <font face="arial"><H2 align="center"><b>系統將於<span id='timer'>15</span>分鐘後，自動重新載入</b></H2></font>
+    <!--  -->
   </body>
 </html>
