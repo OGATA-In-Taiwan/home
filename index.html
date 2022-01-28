@@ -6,6 +6,18 @@
     <script src="script.js"></script>
   </head>
   <body>
+    <!-- FB SDK -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : 'your-app-id',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+    </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
     <!-- 倒計時重新載入 -->
     <script type="text/javascript">
       setTimeout("countdown()", 60000);
