@@ -18,22 +18,6 @@
      crossorigin="anonymous"></script>
   </head>
   <body>
-    <!-- 倒計時重新載入 -->
-    <script type="text/javascript">
-      setTimeout("countdown()", 60000);
-        function countdown() {
-        var s = document.getElementById("timer");
-        s.innerHTML = s.innerHTML - 1;
-        if (s.innerHTML == 0)
-        window.location = "https://ogata.tk";
-        else
-      setTimeout("countdown()", 60000);
-    }
-    </script>
-    <style>
-      font-weight:900;
-    </style>
-    <font face="arial"><h3 controls align="center"><p><b>系統將於<span id='timer'>15</span>分鐘後，自動重新載入</b></p></h3></font>
     <!-- logo -->
     <img src="logo(new).png"  width="215" height="117.5" style="display:block; margin:auto;" />
     <!-- 導覽列 -->
@@ -63,10 +47,10 @@
     </style>
     <nav class="navigation">
       <ul>
-        <li><a href="https://ogata.tk">首頁</a></li>
-        <li><a href="https://tainan608.tk">大橋608</a></li>
-        <li><a href="#">贊助</a></li>
-        <li><a href="#">關於</a></li>
+        <li class="current"><a href="https://ogata.tk"><b>首頁</b></a></li>
+        <li><a href="https://tainan608.tk"><b>大橋608</b></a></li>
+        <li><a href="#"><b>贊助</b></a></li>
+        <li><a href="#"><b>關於</b></a></li>
       </ul>
     </nav>
     <!-- 跑馬燈 -->
