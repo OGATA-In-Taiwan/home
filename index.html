@@ -75,20 +75,71 @@
     </style>
     <div class="header">
       <div class="container">
-        <!-- Logo -->
-          <a href="https://lh3.googleusercontent.com/fife/AAWUweUXIGgXHBsbukTMPTsYuQhfMCXnhPAPETNJ7-wvWlXkXyklGPIqQz4oK-a1H2imxaAsK5D4Ww9j7pV9S3PCbdYqFtlblyHITtVpz5mzb1T-8pvxZTh42HuGUhC-v6RjcOJ-VaKeQzVKfF8vVxFTGYbnoHsX5Wv8c8zFkpx3OfSuJmPPzryGGg1ZdXDuFtQ1s6WAMHN_xjL601tXYorS0ug230bbl3HGEkE_WAgcddRLhpxwf6WV6udK-WwYJn2bQmZ8pENhGbaR1R2TUQYESjWLfJPOVLZQlclW2YQhBBFUCrltgoU8XN-qnJSz0zFDv8GKgUrCRWuW8x3jBwModQ1ELkusr79Qv3wlDRr1biRV_umllHxvQNqBTYWlnSxI22pTelY6KWcI3Y_XKiDISNkrAL8kmlMn75zZHnutyiuA8Q08uzzefq54Q0W2MgZ-pwtGSsUA14mKie5TYkIMwOpf-E2sOKdor29Eyi2mv2Ix9gnbckbUXrovAA2DKTsmus7oFTgL8cjLa468SlnabONC8sCl-nyw-okEtkmDCcZKN791gMyBderSuHUYhHjUPaG5skI5hP3xflHmpZqzeikakwqPOiNoNNLExT-Izn97YMS_ID2V5_azdorR6hANAvH2q-1rtw0FClEeyYvDoVNiG6bpii2U7LEtMyuVT0zJ9pmypfpxP-7jV0pu1efPvDrsqRIQM4SDRuP1_DuJyjAFwK8TRR_HtNI=w1920-h929-ft" class="logo">
-          <i class="fab fa-spotify fa-3x"></i>
-          <span>Spotify</span>
-        </a>
-        <!-- 導覽列選項 -->
-        <nav class="navbar">
-          <a href="https://ogata.tk" class="item">首頁</a>
-          <a href="https://tainan608.tk" class="item">大橋608</a>
-          <a href="#" class="item">贊助</a>
-          <a href="#" class="item">關於</a>
-        </nav>
+    <!-- 導覽列-主行 -->
+    <!-- navbar-expand-md 負責轉手機版的寬度, lg:991以下轉手機版, md:767以下轉手機版, sm:575以下轉手機版 -->
+    <!-- navbar-dark讓文字為白色, bg-dark負責背景顏色為暗底 -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top">
+      <!--  這是 LOGO 文字或圖片  -->
+      <a class="navbar-brand" href="#">LOGO</a>
+      <!--  這是手機版時右上角呈現的選單按鈕, 注意:data-target表示按下這個按鈕時要控制展開收合的物件ID名稱  -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- 這是按鈕上呈現的icon圖案 -->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- navbar-collapse表示這個框架區塊是可收展開的, 注意:id名稱必須跟button中的data-target一樣 -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- 這是一組靠左側的選單 -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">menuItem</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">menuItem</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">menuItem</a>
+          </li>
+        </ul>
+
+        <!-- 這是一組靠右側的選單 -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">Section1 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">Section2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">Section3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section4">Section4</a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
+
+    <section id="section1">
+      <p>&nbsp;</p>
+      <h3 style="color:red;font-size:20px;">導覽選單固定在頁面上方不被捲動</h3>
+      <p>在 <span class="wordBlue">&lt;nav&gt;</span> 的標籤上加上 <span class="wordRed">fixed-top</span> 的class名稱。</p>
+      <p>&nbsp;</p>
+      <h3 style="color:red;font-size:20px;">選單項目導覽整頁區段的捲動</h3>
+      <p><span class="wordBlue">頁面區段的標籤加上 id 名稱</span>, 按鈕連結到 <span class="wordRed">id 名稱</span>, 便可以讓選單項目連結到指的區段。<br>
+        加上一段 <span class="wordBlue">&lt;script&gt; 程式</span>, 便可以讓選單項目導覽整頁區段的捲動</p>
+    </section>
+
+    <section id="section2"><h1>section2</h1></section>
+    <section id="section3"><h1>section3</h1></section>
+    <section id="section4"><h1>section4</h1></section>
     <!-- 跑馬燈 -->
     <marquee onMouseOver="this.stop()" onMouseOut="this.start()"scrollamount="1" width='' bgColor='#eeeeee' behavior='' direction='up' style='color:#000;' height='130'>
       <br>教師日記將於1/18停止連載<a class="badge" style="background-color: green; font-weight: normal; color: #ffffff; text-shadow:none;"><u>公告</u></a>
