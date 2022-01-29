@@ -18,6 +18,22 @@
      crossorigin="anonymous"></script>
   </head>
   <body>
+    <!-- 倒計時重新載入 -->
+    <script type="text/javascript">
+      setTimeout("countdown()", 60000);
+        function countdown() {
+        var s = document.getElementById("timer");
+        s.innerHTML = s.innerHTML - 1;
+        if (s.innerHTML == 0)
+        window.location = "https://ogata.tk";
+        else
+      setTimeout("countdown()", 60000);
+    }
+    </script>
+    <style>
+      font-weight:900;
+    </style>
+    <font face="arial"><h3 controls align="center"><p><b>系統將於<span id='timer'>15</span>分鐘後，自動重新載入</b></p></h3></font>
     <!-- logo -->
     <header>
       <h1><img src="logo(new).png" width="358" height="52" alt="OGATA In Taiwan"></h1>
@@ -55,22 +71,6 @@
         <li><a href="#">關於</a></li>
       </ul>
     </nav>
-    <!-- 倒計時重新載入 -->
-    <script type="text/javascript">
-      setTimeout("countdown()", 60000);
-        function countdown() {
-        var s = document.getElementById("timer");
-        s.innerHTML = s.innerHTML - 1;
-        if (s.innerHTML == 0)
-        window.location = "https://ogata.tk";
-        else
-      setTimeout("countdown()", 60000);
-    }
-    </script>
-    <style>
-      font-weight:900;
-    </style>
-    <font face="arial"><h3 controls align="center"><p><b>系統將於<span id='timer'>15</span>分鐘後，自動重新載入</b></p></h3></font>
     <!-- 跑馬燈 -->
     <marquee onMouseOver="this.stop()" onMouseOut="this.start()"scrollamount="1" width='' bgColor='#eeeeee' behavior='' direction='up' style='color:#000;' height='130'>
       <br>教師日記將於1/18停止連載<a class="badge" style="background-color: green; font-weight: normal; color: #ffffff; text-shadow:none;"><u>公告</u></a>
