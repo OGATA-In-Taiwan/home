@@ -32,90 +32,59 @@
     <font face="arial"><h3 width="365px" height="30px" controls align="center"><b>系統將於<span id='timer'>15</span>分鐘後，自動重新載入</b></h3></font>
     <!-- 導覽列 -->
     <style>
-    nav > ul {
-      background-color: rgb(230, 230, 230);
-      list-style: none;   /* 移除項目符號 */
-      margin: 0;
-      padding: 0;
-    }
-    
-    nav a {
-      color: inherit; /* 移除超連結顏色 */
-      font-size: 1.2rem;
-      text-decoration: none;  /* 移除超連結底線 */
-    }
-    
-    /* 滑鼠移到 <a> 時變成深底淺色 */
-    nav a:hover {
-      background-color: rgb(115, 115, 115);
-      color: white;
-    }
-      
-    .flex-nav {
-      display: flex;
-      justify-content: center;
-    }
-    </style>
-    <nav>
-      <ul class="flex-nav">
-        <li><a href="#">首頁</a></li>
-        <li><a href="#">大橋608</a></li>
-        <li><a href="#">贊助</a></li>
-        <li><a href="#">關於</a></li>
-      </ul>
-    </nav>
-    <!-- ----------- -->
-    <style>
       a {
-  text-decoration: none;
-  color: #26ff93;
-  font-weight: 300;
-}
+        text-decoration: none;
+        color: #26ff93;
+        font-weight: 300;
+      }
       .logo {
-  margin-right: 1em;
-  display: flex;
-  align-items: center;
-  .fa-spotify {
-    padding-right: 0.5em;
-    color: #26ff93;
-  }
-  span {
-    font-size: 26px;
-    font-weight: 500;
-  }
-}
+        margin-right: 1em;
+        display: flex;
+        align-items: center;
+        .fa-spotify {
+          padding-right: 0.5em;
+          color: #26ff93;
+        }
+      }
+        
+      span {
+          font-size: 26px;
+          font-weight: 500;
+        }
       
       .navbar {
-  display: flex;
-  align-items: center;
-  margin: auto;
-  .item {
-    flex-grow: 1;
-    padding: 20px;
-    border-bottom: 5px solid transparent;
-    transition: 0.3s;
-    &:hover {
-      border-bottom: 5px solid #26ff93;
+        display: flex;
+        align-items: center;
+        margin: auto;
+      }
+        
+      .item {
+        flex-grow: 1;
+        padding: 20px;
+        border-bottom: 5px solid transparent;
+        transition: 0.3s;
+        &:hover {
+          border-bottom: 5px solid #26ff93;
+      }
     }
-  }
-}
+
     </style>
     <div class="header">
-  <div class="container">
-    //Logo
-    <a href="#" class="logo">
-      <i class="fab fa-spotify fa-3x"></i>
-      <span>Spotify</span>
-    </a>
-    //導覽列選項
-    <nav class="navbar">
-      <a href="#" class="item">金魚系列 VII</a>
-      <a href="#" class="item">每個網站都有的導覽列</a>
-      <a href="#" class="item">選項一定要有互動</a>
-      <a href="#" class="item">這個不會不行</a>
-    </nav>
-  </div>
-</div>
+      <div class="container">
+        <!-- Logo -->
+          <a href="#" class="logo">
+          <i class="fab fa-spotify fa-3x"></i>
+          <span>Spotify</span>
+        </a>
+        <!-- 導覽列選項 -->
+        <nav class="navbar">
+          <a href="#" class="item">金魚系列 VII</a>
+          <a href="#" class="item">每個網站都有的導覽列</a>
+          <a href="#" class="item">選項一定要有互動</a>
+          <a href="#" class="item">這個不會不行</a>
+        </nav>
+      </div>
+    </div>
     <!-- 跑馬燈 -->
     <marquee onMouseOver="this.stop()" onMouseOut="this.start()"scrollamount="1" width='' bgColor='#eeeeee' behavior='' direction='up' style='color:#000;' height='130'>
       <br>教師日記將於1/18停止連載<a class="badge" style="background-color: green; font-weight: normal; color: #ffffff; text-shadow:none;"><u>公告</u></a>
