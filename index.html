@@ -13,24 +13,8 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9033663837052625"
      crossorigin="anonymous"></script>
   </head>
+  <!-- 導覽列 -->
   <body>
-    <!-- 倒計時重新載入 -->
-    <script type="text/javascript">
-      setTimeout("countdown()", 60000);
-        function countdown() {
-        var s = document.getElementById("timer");
-        s.innerHTML = s.innerHTML - 1;
-        if (s.innerHTML == 0)
-        window.location = "https://ogata.tk";
-        else
-      setTimeout("countdown()", 60000);
-    }
-    </script>
-    <style>
-      font-weight:900;
-    </style>
-    <font face="arial"><h3 controls align="center"><p><b>系統將於<span id='timer'>15</span>分鐘後，自動重新載入</b></p></h3></font>
-    <!-- 導覽列 -->
     <!-- navbar-expand-md 負責轉手機版的寬度, lg:991以下轉手機版, md:767以下轉手機版, sm:575以下轉手機版 -->
     <!-- navbar-dark讓文字為白色, bg-dark負責背景顏色為暗底 -->
     <nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top">
@@ -103,7 +87,7 @@
       .wordBlue { color:blue; font-weight:bold; }
     </style>
     
-    <script>
+    <script type="text/javascript">
     $(function(){
       // 當#myNavbar上的<a>連結按鈕click時, 讓整頁慢慢滑動到指定位置=============================
       $("#navbarNav a").on('click', function(event) {
@@ -124,6 +108,25 @@
 
     });
     </script>
+  </body>
+  <!-- 通用 -->
+  <body>
+    <!-- 倒計時重新載入 -->
+    <script type="text/javascript">
+      setTimeout("countdown()", 60000);
+        function countdown() {
+        var s = document.getElementById("timer");
+        s.innerHTML = s.innerHTML - 1;
+        if (s.innerHTML == 0)
+        window.location = "https://ogata.tk";
+        else
+      setTimeout("countdown()", 60000);
+    }
+    </script>
+    <style>
+      font-weight:900;
+    </style>
+    <font face="arial"><h3 controls align="center"><p><b>系統將於<span id='timer'>15</span>分鐘後，自動重新載入</b></p></h3></font>
     <!-- 跑馬燈 -->
     <marquee onMouseOver="this.stop()" onMouseOut="this.start()"scrollamount="1" width='' bgColor='#eeeeee' behavior='' direction='up' style='color:#000;' height='130'>
       <br>教師日記將於1/18停止連載<a class="badge" style="background-color: green; font-weight: normal; color: #ffffff; text-shadow:none;"><u>公告</u></a>
