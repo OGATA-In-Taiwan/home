@@ -9,20 +9,11 @@
     <link rel="stylesheet" href="style.css">
     <!-- 連結js -->
     <script src="script.js"></script>
+    <!-- Google AdSense認證 -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9033663837052625"
+     crossorigin="anonymous"></script>
   </head>
   <body>
-    <!-- FB SDK -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId            : 'your-app-id',
-          autoLogAppEvents : true,
-          xfbml            : true,
-          version          : 'v12.0'
-        });
-      };
-    </script>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
     <!-- 倒計時重新載入 -->
     <script type="text/javascript">
       setTimeout("countdown()", 60000);
@@ -36,10 +27,5 @@
       }
     </script>
     <font face="arial"><H2 align="center"><b>系統將於<span id='timer'>15</span>分鐘後，自動重新載入</b></H2></font>
-    <!-- FB社交外掛程式 -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v12.0&appId=306520464666696&autoLogAppEvents=1" nonce="jcXH2V1o"></script>
-    <!-- FB社交外掛程式位置 -->
-    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="" data-numposts="5"></div>
   </body>
 </html>
