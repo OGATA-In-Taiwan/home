@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!-- 通用 -->
 <html>
-  <!-- 通用 -->
   <head>
     <!-- 網站小圖片 -->
     <link href="favicon.png" rel="shortcut icon"/>
@@ -15,7 +14,6 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9033663837052625"
      crossorigin="anonymous"></script>
   </head>
-  <!-- 通用 -->
   <body>
     <!-- 倒計時重新載入 -->
     <script type="text/javascript">
@@ -33,6 +31,99 @@
       font-weight:900;
     </style>
     <font face="arial"><h3 controls align="center"><p><b>系統將於<span id='timer'>15</span>分鐘後，自動重新載入</b></p></h3></font>
+    <!-- 導覽列 -->
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    body{
+      margin: 0;
+    }
+    nav.nav{
+      border: 1px solid red;
+    }
+    ul.nav_list{
+      margin: 0;
+      padding: 0;
+    }
+    ul.nav_list > li{
+      list-style: none;
+      display: inline-block;
+      vertical-align: top;
+    }
+    ul.nav_list > li > a{
+      text-decoration: none;
+      border: 1px solid blue;
+      display: inline-block;
+      padding: 5px 10px;
+      color: black;
+    }
+    ul.nav_list > li > a:hover{
+      background-color: black;
+      color: white;
+    }
+
+
+    /* 下拉選單 */
+
+    div.social_block{
+      border: 1px solid orange;
+      padding: 5px 10px;
+
+      /* 第一步 */
+    }
+
+
+    div.social_block:hover ul.social_link_list{
+      /* 第三步 */
+    }
+
+
+    ul.social_link_list{
+      margin: 0;
+      padding: 0;
+      background-color: black;
+
+      /* 第二步 */
+    }
+
+    ul.social_link_list > li{
+      list-style: none;
+      width: 100px;
+    }
+
+    ul.social_link_list > li > a{
+      color: white;
+      display: inline-block;
+      text-decoration: none;
+      width: 100%;
+      text-align: center;
+      padding: 5px 0;
+    }
+    </style>
+    <nav class="nav">
+      <ul class="nav_list">
+        <li>
+          <a href="http://tw.yahoo.com" target="_blank">關於我</a>
+        </li>
+        <li>
+          <a href="http://www.google.com" target="_blank">與我聯繫</a>
+        </li>
+        <li>
+          <div class="social_block">
+            社群連結
+            <ul class="social_link_list">
+              <li>
+                <a href="#">FB</a>
+              </li>
+              <li>
+                <a href="#">Twitter</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
     <!-- 跑馬燈 -->
     <marquee onMouseOver="this.stop()" onMouseOut="this.start()"scrollamount="1" width='' bgColor='#eeeeee' behavior='' direction='up' style='color:#000;' height='130'>
       <br>教師日記將於1/18停止連載<a class="badge" style="background-color: green; font-weight: normal; color: #ffffff; text-shadow:none;"><u>公告</u></a>
