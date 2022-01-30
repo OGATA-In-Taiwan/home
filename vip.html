@@ -8,7 +8,7 @@
     <!-- 網站小圖片 -->
     <link href="favicon.png" rel="shortcut icon"/>
     <!-- 網站標題 -->
-    <title>OGATA官網-VIP</title>
+    <title>OGATA官網</title>
     <!-- 連結css -->
     <link rel="stylesheet" href="style.css">
     <!-- 連結js -->
@@ -18,6 +18,33 @@
      crossorigin="anonymous"></script>
   </head>
   <body>
+    <!-- 密碼驗證 -->
+    <script>
+    	var password = aaaa-0000-aaaa-0000-aaaa;
+    	var input;
+      var entry_count = 0;
+      var entry_limit = 5;
+      var out_of_limit = false;
+    
+    	while(password!=input && !out_of_limit){
+      entry_count++;
+      if(entry_count<=entry_limit){
+      		input=prompt("請輸入OGATA會員識別碼");
+          input=prompt("OGATA會員識別碼，格式為:aaaa-0000-aaaa-0000-aaaa");
+      	}
+      	else{
+        	out_of_limit=true;
+        }
+    	}
+      
+      if(out_of_limit){
+      		alert("超出輸入次數，將暫時停用");
+      	}
+      
+      else{
+        	alert("OGATA會員驗證成功")
+        }
+    </script>
     <!-- logo -->
     <img src="logo(new).png"  width="215" height="117.5" style="display:block; margin:auto;" />
     <!-- 導覽列 -->
