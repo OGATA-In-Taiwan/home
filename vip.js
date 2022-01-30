@@ -1,4 +1,4 @@
-<!-- 密碼驗證 -->
+// 密碼檢測
 var password = aaaa-0000-aaaa-0000-aaaa;
 var password = bbbb-0000-aaaa-0000-aaaa;
 var password = cccc-0000-aaaa-0000-aaaa;
