@@ -22,27 +22,6 @@
     <!-- Google AdSense認證 -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9033663837052625"
      crossorigin="anonymous"></script>
-    <!-- 回到最上方css -->
-    <style>
-      .back-to-top {
-      display: none; /* 默認是隱藏的，這樣在第一屏才不顯示 */
-      position: fixed; /* 位置是固定的 */
-      bottom: 20px; /* 顯示在頁面底部 */
-      right: 30px; /* 顯示在頁面的右邊 */
-      z-index: 99; /* 確保不被其他功能覆蓋 */
-      border: 1px solid #5cb85c; /* 顯示邊框 */
-      outline: none; /* 不顯示外框 */
-      background-color: #fff; /* 設置背景背景顏色 */
-      color: #5cb85c; /* 設置文本顏色 */
-      cursor: pointer; /* 滑鼠移到按鈕上顯示手型 */
-      padding: 10px 15px 15px 15px; /* 增加一些內邊距 */
-      border-radius: 10px; /* 增加圓角 */
-      }
-      .back-to-top:hover {
-      background-color: #5cb85c; /* 滑鼠移上去時，反轉顏色 */
-      color: #fff;
-      }
-    </style>
   </head>
   <body>
     <!-- logo -->
@@ -185,130 +164,44 @@
     <!-- 回到最上方 -->
       <button class="js-back-to-top back-to-top" title="回到頭部">&#65085;</button>
       <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
-      <script>
-      $(function () {
-      var $win = $(window);
-      var $backToTop = $('.js-back-to-top');
-    // 當用戶滾動到離頂部100像素時，展示回到頂部按鈕
-      $win.scroll(function () {
-      if ($win.scrollTop() > 100) {
-      $backToTop.show();
-      } else {
-      $backToTop.hide();
-      }
-      });
-    // 當用戶點擊按鈕時，通過動畫效果返回頭部
-      $backToTop.click(function () {
-      $('html, body').animate({scrollTop: 0}, 200);
-      });
-      });
-      </script>
-    <!-- 圖片 -->
-    <style>
-      @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-      figure.snip0005 {
-        position: relative;
-        overflow: hidden;
-        margin: 10px;
-        min-width: 220px;
-        max-width: 310px;
-        max-height: 220px;
-        width: 100%;
-        background: #000;
-        text-align: center;
-      }
-      figure.snip0005 * {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-      }
-      figure.snip0005 img {
-        position: relative;
-        top: 0;
-        opacity: 1.0;
-        right: 0;
-        -webkit-transition: 0.3s ease-in-out;
-        transition: 0.3s ease-in-out;
-      }
-      figure.snip0005 > div {
-        width: 100%;
-        bottom: -70px;
-        position: absolute;
-        padding: 4px;
-        color: #ffffff;
-        border-top: 2px solid #ffffff;
-        background: #000;
-        -webkit-transition: 0.3s ease-in-out;
-        transition: 0.3s ease-in-out;
-      }
-      figure.snip0005 > div a i {
-        display: inline-block;
-        font-size: 32px;
-        color: #ffffff;
-        padding: 8px 15px;
-        position: relative;
-        bottom: -60px;
-        -webkit-transition: 0.3s ease-in-out;
-        transition: 0.3s ease-in-out;
-      }
-      figure.snip0005 > div a i:hover {
+      <style>
+        .back-to-top {
+        display: none; /* 默認是隱藏的，這樣在第一屏才不顯示 */
+        position: fixed; /* 位置是固定的 */
+        bottom: 20px; /* 顯示在頁面底部 */
+        right: 30px; /* 顯示在頁面的右邊 */
+        z-index: 99; /* 確保不被其他功能覆蓋 */
+        border: 1px solid #5cb85c; /* 顯示邊框 */
+        outline: none; /* 不顯示外框 */
+        background-color: #fff; /* 設置背景背景顏色 */
+        color: #5cb85c; /* 設置文本顏色 */
+        cursor: pointer; /* 滑鼠移到按鈕上顯示手型 */
+        padding: 10px 15px 15px 15px; /* 增加一些內邊距 */
+        border-radius: 10px; /* 增加圓角 */
+        }
+        .back-to-top:hover {
+        background-color: #5cb85c; /* 滑鼠移上去時，反轉顏色 */
         color: #fff;
-      }
-      figure.snip0005:hover img {
-        opacity: 0.5;
-        top: -60px;
-      }
-      figure.snip0005:hover > div {
-        bottom: 0;
-        opacity: 1;
-      }
-      figure.snip0005:hover > div a i {
-        bottom: 0;
-      }
-      figure.snip0005:hover a:first-child i {
-        -webkit-transition-delay: 0.1s;
-        transition-delay: 0.1s;
-      }
-      figure.snip0005:hover a:nth-child(2) i {
-        -webkit-transition-delay: 0.15s;
-        transition-delay: 0.15s;
-      }
-      figure.snip0005:hover a:nth-child(3) i {
-        -webkit-transition-delay: 0.2s;
-        transition-delay: 0.2s;
-      }
-
-
-      /* Demo purposes only */
-      html {
-        height: 100%;
-      }
-      body {
-        background-color: #212121;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        height: 100%;
-      }
-    </style>
-    <figure class="snip0005">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample13.jpg" alt="sample13"/>
-      <div>
-        <a href="img/sample13.jpg"><i class="ion-ios-download-outline"></i></a>
-      </div>      
-    </figure>
-    <figure class="snip0005">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample14.jpg" alt="sample14"/>
-      <div>
-        <a href="img/sample14.jpg"><i class="ion-ios-download-outline"></i></a>
-      </div>      
-    </figure>
-    <figure class="snip0005">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15"/>
-      <div>
-        <a href="img/sample15.jpg"><i class="ion-ios-download-outline"></i></a>
-      </div>      
-    </figure>
+        }
+      </style>
+      <script>
+        $(function () {
+        var $win = $(window);
+        var $backToTop = $('.js-back-to-top');
+      // 當用戶滾動到離頂部100像素時，展示回到頂部按鈕
+        $win.scroll(function () {
+        if ($win.scrollTop() > 100) {
+        $backToTop.show();
+        } else {
+        $backToTop.hide();
+        }
+        });
+      // 當用戶點擊按鈕時，通過動畫效果返回頭部
+        $backToTop.click(function () {
+        $('html, body').animate({scrollTop: 0}, 200);
+        });
+        });
+      </script>
     <!-- 版權聲明 -->
     <style>
       font-weight:900;
