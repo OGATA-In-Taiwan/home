@@ -2,13 +2,15 @@
 <!-- 定義語言 -->
 <html lang="zh-TW">
 <html>
-  <!-- 數位格式 -->
-  <meta charset="utf-8">
   <head>
+    <!-- 數位格式 -->
+    <meta charset="utf-8">
     <!-- 網站小圖片 -->
     <link href="img/favicon.png" rel="shortcut icon"/>
     <!-- 網站標題 -->
     <title>OGATA-首頁</title>
+    <!-- class圖示 -->
+    <script src="https://kit.fontawesome.com/ebb5e73c7b.js" crossorigin="anonymous"></script>
     <!-- CEO -->
     <meta name="description" content="OGATA於2021/11/20創立，我們以[以我成大，追求夢想，與未來!]為口號，並希望能夠屹立不搖的堅持下去">
     <meta name="distribution" content="Taiwan">
@@ -17,60 +19,222 @@
     <meta property="og:title" content="OGATA-首頁" />
     <meta property="og:image" content="img/logo(new).png" />
     <meta property="og:description" content="OGATA於2021/11/20創立，我們以[以我成大，追求夢想，與未來!]為口號，並希望能夠屹立不搖的堅持下去" />
-    <!-- 連結css -->
-    <link rel="stylesheet" href="style.css">
     <!-- Google AdSense認證 -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9033663837052625"
      crossorigin="anonymous"></script>
+    <!-- 回到最上方css -->
+    <style>
+      .back-to-top {
+      display: none; /* 默認是隱藏的，這樣在第一屏才不顯示 */
+      position: fixed; /* 位置是固定的 */
+      bottom: 20px; /* 顯示在頁面底部 */
+      right: 30px; /* 顯示在頁面的右邊 */
+      z-index: 99; /* 確保不被其他功能覆蓋 */
+      border: 1px solid #5cb85c; /* 顯示邊框 */
+      outline: none; /* 不顯示外框 */
+      background-color: #fff; /* 設置背景背景顏色 */
+      color: #5cb85c; /* 設置文本顏色 */
+      cursor: pointer; /* 滑鼠移到按鈕上顯示手型 */
+      padding: 10px 15px 15px 15px; /* 增加一些內邊距 */
+      border-radius: 10px; /* 增加圓角 */
+      }
+      .back-to-top:hover {
+      background-color: #5cb85c; /* 滑鼠移上去時，反轉顏色 */
+      color: #fff;
+      }
+    </style>
   </head>
   <body>
-    <!-- 連結js -->
-    <script src="script.js"></script>
     <!-- logo -->
     <img src="img/logo(new).png"  width="215" height="117.5" style="display:block; margin:auto;" />
     <!-- 導覽列 -->
     <style>
-    .navigation ul {           /* 導覽列整體設定*/
-      margin: 0;             /* 取消外距，設定為0*/
-      padding: 4px;          /* 內部距離，設定為4px*/
-      text-align: center;    /* 文字置中*/
+    @import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+    .snip1499 {
+      font-family: 'Roboto', Arial, sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 500;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
     }
-      
-    .navigation ul li {        /* 按鈕個別設定*/
-      list-style-type: none; /* 取消前面的小黑點*/
-      display: inline;       /* 成一行排列*/
-      margin: 0 5px;         /* 外距設定為0.5px*/
-      font-size: 20px;       /* 字體大小 */
+
+    .snip1499 * {
+      box-sizing: border-box;
     }
-      
-    .navigation ul li a {      /* 超連結設定*/
-      color: #CA5D87;         /* 文字顏色設定*/
-      text-decoration: none; /* 文字無底線*/
+
+    .snip1499 li {
+      display: inline-block;
+      list-style: outside none none;
+      margin: 0.5em 1em;
+      overflow: hidden;
+      position: relative;
+      border-radius: 3px;
     }
-      
-    .navigation ul li a:hover {/* 超連結滑鼠滑過設定*/
-      color: #62d5e8;        /* 文字顏色設定*/
-      text-decoration: none;/* 文字無底線*/
+
+    .snip1499 li:before,
+    .snip1499 li:after {
+      display: block;
     }
-      
-    .currnet {
-      color: #62d5;         /* 文字顏色設定*/
+
+    .snip1499 li:before {
+      bottom: 0%;
     }
+
+    .snip1499 li:after {
+      bottom: 75%;
+    }
+
+    .snip1499 a {
+      backface-visibility: hidden;
+      color: #e6e6e6;
+      display: block;
+      padding: 0.5em 1em;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .snip1499 a:hover {
+      color: #ffffff;
+    }
+
+    .snip1499 a:before {
+      bottom: 25%;
+    }
+
+    .snip1499 a:after {
+      bottom: 50%;
+    }
+
+    .snip1499 li:before,
+    .snip1499 li:after,
+    .snip1499 a:before,
+    .snip1499 a:after {
+      background-color: #962d22;
+      position: absolute;
+      height: 25%;
+      width: 100%;
+      left: 0;
+      content: '';
+      z-index: -1;
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+      opacity: 0;
+      -webkit-transition: all 0.3s steps(4);
+      transition: all 0.3s steps(4);
+    }
+
+    .snip1499 li:hover:before,
+    .snip1499 li.current:before,
+    .snip1499 li:hover:after,
+    .snip1499 li.current:after,
+    .snip1499 li:hover a:before,
+    .snip1499 li.current a:before,
+    .snip1499 li:hover a:after,
+    .snip1499 li.current a:after {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+      opacity: 1;
+    }
+
+    .snip1499 li:hover:before,
+    .snip1499 li.current:before {
+      -webkit-transition-delay: 0.225s;
+      transition-delay: 0.225s;
+    }
+
+    .snip1499 li:hover:after,
+    .snip1499 li.current:after {
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s;
+    }
+
+    .snip1499 li:hover a:before,
+    .snip1499 li.current a:before {
+      -webkit-transition-delay: 0.15s;
+      transition-delay: 0.15s;
+    }
+
+    .snip1499 li:hover a:after,
+    .snip1499 li.current a:after {
+      -webkit-transition-delay: 0.075s;
+      transition-delay: 0.075s;
+    }
+
+    /* Demo purposes only */
+    body {
+      background-color: #212121;
     </style>
-    <nav class="navigation">
-      <ul>
-        <li><a href="index" class="current">首頁</a></li> |
-        <li><a href="https://tainan608.tk">大橋608</a></li> |
-        <li><a href="sponsor">贊助</a></li> |
-        <li><a href="#">關於</a></li>
-      </ul>
-    </nav>
+    <script>
+      /* Demo purposes only */
+      $(".hover").mouseleave(
+        function() {
+          $(this).removeClass("hover");
+        }
+      );
+    </script>
+    <ul class="snip1499">
+      <li class="current"><a href="index">首頁</a></li>
+      <li><a href="sponsor">贊助</a></li>
+      <li><a href="#">關於</a></li>
+    </ul>
+    <!-- 分享器 -->
+    <style>
+      ul.share-buttons{
+        list-style: none;
+        padding: 0;
+      }
+
+      ul.share-buttons li{
+        display: inline;
+      }
+
+      ul.share-buttons .sr-only{
+        position: absolute;
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px, 1px, 1px, 1px);
+        padding: 0;
+        border: 0;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+      }
+    </style>
+    <ul class="share-buttons" data-source="simplesharingbuttons.com">
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fogata.tk&quote=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&quote=' + encodeURIComponent(document.URL)); return false;"><img alt="Share on Facebook" src="images/simple_icons/Facebook.png" /></a></li>
+      <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fogata.tk&text=:%20http%3A%2F%2Fogata.tk" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img alt="Tweet" src="images/simple_icons/Twitter.png" /></a></li>
+      <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fogata.tk&title=" target="_blank" title="Submit to Reddit" onclick="window.open('http://www.reddit.com/submit?url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img alt="Submit to Reddit" src="images/simple_icons/Reddit.png" /></a></li>
+      <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fogata.tk&title=&summary=&source=http%3A%2F%2Fogata.tk" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img alt="Share on LinkedIn" src="images/simple_icons/LinkedIn.png" /></a></li>
+      <li><a href="mailto:?subject=&body=:%20http%3A%2F%2Fogata.tk" target="_blank" title="Send email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img alt="Send email" src="images/simple_icons/Email.png" /></a></li>
+    </ul>
+    <!-- 回到最上方 -->
+      <button class="js-back-to-top back-to-top" title="回到頭部">&#65085;</button>
+      <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+      <script>
+      $(function () {
+      var $win = $(window);
+      var $backToTop = $('.js-back-to-top');
+    // 當用戶滾動到離頂部100像素時，展示回到頂部按鈕
+      $win.scroll(function () {
+      if ($win.scrollTop() > 100) {
+      $backToTop.show();
+      } else {
+      $backToTop.hide();
+      }
+      });
+    // 當用戶點擊按鈕時，通過動畫效果返回頭部
+      $backToTop.click(function () {
+      $('html, body').animate({scrollTop: 0}, 200);
+      });
+      });
+      </script>
     <!-- 版權聲明 -->
     <style>
       font-weight:900;
     </style>
-    <font face="arial"><h6 align="center">
+    <font color="#fff"><font face="arial"><h6 align="center">
       <td style="vertical-align:bottom;">© Copyright 2022 OGATA. All rights reserved.</td>
-    </h6></font>
+    </h6></font></font>
   </body>
 </html>
