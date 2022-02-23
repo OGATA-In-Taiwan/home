@@ -9,46 +9,11 @@
     <link href="img/favicon.png" rel="shortcut icon"/>
     <!-- 網站標題 -->
     <title>OGATA-贊助</title>
-    <!-- class圖示 -->
-    <script src="https://kit.fontawesome.com/ebb5e73c7b.js" crossorigin="anonymous"></script>
-    <!-- CEO -->
-    <meta name="description" content="OGATA於2021/11/20創立，我們以[以我成大，追求夢想，與未來!]為口號，並希望能夠屹立不搖的堅持下去">
-    <meta name="distribution" content="Taiwan">
-    <meta name="copyright" content="© Copyright 2022 OGATA. All rights reserved.">
-    <!-- Open Graph Tag -->
-    <meta property="og:title" content="OGATA-贊助" />
-    <meta property="og:image" content="img/logo(new).png" />
-    <meta property="og:description" content="OGATA於2021/11/20創立，我們以[以我成大，追求夢想，與未來!]為口號，並希望能夠屹立不搖的堅持下去" />
-    <!-- 連結css -->
-    <link rel="stylesheet" href="style.css">
     <!-- Google AdSense認證 -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9033663837052625"
      crossorigin="anonymous"></script>
-    <!-- 回到最上方css -->
-    <style>
-      .back-to-top {
-      display: none; /* 默認是隱藏的，這樣在第一屏才不顯示 */
-      position: fixed; /* 位置是固定的 */
-      bottom: 20px; /* 顯示在頁面底部 */
-      right: 30px; /* 顯示在頁面的右邊 */
-      z-index: 99; /* 確保不被其他功能覆蓋 */
-      border: 1px solid #5cb85c; /* 顯示邊框 */
-      outline: none; /* 不顯示外框 */
-      background-color: #fff; /* 設置背景背景顏色 */
-      color: #5cb85c; /* 設置文本顏色 */
-      cursor: pointer; /* 滑鼠移到按鈕上顯示手型 */
-      padding: 10px 15px 15px 15px; /* 增加一些內邊距 */
-      border-radius: 10px; /* 增加圓角 */
-      }
-      .back-to-top:hover {
-      background-color: #5cb85c; /* 滑鼠移上去時，反轉顏色 */
-      color: #fff;
-      }
-    </style>
   </head>
   <body>
-    <!-- 連結js -->
-    <script src="script.js"></script>
     <!-- logo -->
     <img src="img/logo(new).png"  width="215" height="117.5" style="display:block; margin:auto;" />
     <!-- 導覽列 -->
@@ -183,26 +148,52 @@
       <li class="current"><a href="sponsor">贊助</a></li>
       <li><a href="#">關於</a></li>
     </ul>
-    <!-- 回到最上方 -->
-      <button class="js-back-to-top back-to-top" title="回到頭部">&#65085;</button>
-      <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
-      <script>
-      $(function () {
-      var $win = $(window);
-      var $backToTop = $('.js-back-to-top');
-    // 當用戶滾動到離頂部100像素時，展示回到頂部按鈕
-      $win.scroll(function () {
-      if ($win.scrollTop() > 100) {
-      $backToTop.show();
-      } else {
-      $backToTop.hide();
+    <style>
+      ul li {
+        display: table;
+        margin: 0 auto;
       }
-      });
-    // 當用戶點擊按鈕時，通過動畫效果返回頭部
-      $backToTop.click(function () {
-      $('html, body').animate({scrollTop: 0}, 200);
-      });
-      });
+    </style>
+    <!-- 回到最上方 -->
+      <button class="js-back-to-top back-to-top" title="回到頂部">&#65085;</button>
+      <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+      <style>
+        .back-to-top {
+        display: none; /* 默認是隱藏的，這樣在第一屏才不顯示 */
+        position: fixed; /* 位置是固定的 */
+        bottom: 20px; /* 顯示在頁面底部 */
+        right: 30px; /* 顯示在頁面的右邊 */
+        z-index: 99; /* 確保不被其他功能覆蓋 */
+        border: 1px solid #5cb85c; /* 顯示邊框 */
+        outline: none; /* 不顯示外框 */
+        background-color: #fff; /* 設置背景背景顏色 */
+        color: #5cb85c; /* 設置文本顏色 */
+        cursor: pointer; /* 滑鼠移到按鈕上顯示手型 */
+        padding: 10px 15px 15px 15px; /* 增加一些內邊距 */
+        border-radius: 10px; /* 增加圓角 */
+        }
+        .back-to-top:hover {
+        background-color: #5cb85c; /* 滑鼠移上去時，反轉顏色 */
+        color: #fff;
+        }
+      </style>
+      <script>
+        $(function () {
+        var $win = $(window);
+        var $backToTop = $('.js-back-to-top');
+      // 當用戶滾動到離頂部100像素時，展示回到頂部按鈕
+        $win.scroll(function () {
+        if ($win.scrollTop() > 100) {
+        $backToTop.show();
+        } else {
+        $backToTop.hide();
+        }
+        });
+      // 當用戶點擊按鈕時，通過動畫效果返回頭部
+        $backToTop.click(function () {
+        $('html, body').animate({scrollTop: 0}, 200);
+        });
+        });
       </script>
     <!-- 版權聲明 -->
     <style>
