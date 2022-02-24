@@ -20,148 +20,116 @@
     <!-- Google AdSense認證 -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9033663837052625"
      crossorigin="anonymous"></script>
+    <!-- 主幕css -->
+    @import url(https://fonts.googleapis.com/css?family=Lato);
+    @import url(https://fonts.googleapis.com/css?family=Oswald);
+    @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+    .snip1579 {
+      font-family: 'Lato', Arial, sans-serif;
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      margin: 10px;
+      min-width: 250px;
+      max-width: 310px;
+      width: 100%;
+      background-color: #000000;
+      color: #ffffff;
+      text-align: left;
+      font-size: 16px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    }
+    .snip1579 * {
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    .snip1579 img {
+      max-width: 100%;
+      vertical-align: top;
+    }
+    .snip1579 figcaption {
+      position: absolute;
+      height: 75px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      overflow: hidden;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.75);
+    }
+    .snip1579 h3 {
+      font-family: 'Oswald';
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 3px 0;
+    }
+    .snip1579 h5 {
+      font-weight: 400;
+      margin: 0;
+      text-transform: uppercase;
+      color: #bbb;
+      letter-spacing: 1px;
+    }
+    .snip1579 blockquote {
+      padding: 0;
+      margin: 0;
+      font-style: italic;
+      font-size: 1em;
+    }
+    .snip1579 a {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    .snip1579:hover figcaption,
+    .snip1579.hover figcaption {
+      height: calc(85%);
+    }
+    <!-- 主幕js -->
+    /* Demo purposes only */
+    $(".hover").mouseleave(
+      function () {
+        $(this).removeClass("hover");
+      }
+    );
   </head>
   <body>
     <!-- logo -->
     <img src="img/logo(new).png"  width="215" height="117.5" style="display:block; margin:auto;" />
-    <!-- 導覽列 -->
-    <style>
-    @import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
-    .snip1499 {
-      font-family: 'Roboto', Arial, sans-serif;
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: 500;
-      -webkit-transform: translateZ(0);
-      transform: translateZ(0);
-    }
-
-    .snip1499 * {
-      box-sizing: border-box;
-    }
-
-    .snip1499 li {
-      display: inline-block;
-      list-style: outside none none;
-      margin: 0.5em 1em;
-      overflow: hidden;
-      position: relative;
-      border-radius: 3px;
-    }
-
-    .snip1499 li:before,
-    .snip1499 li:after {
-      display: block;
-    }
-
-    .snip1499 li:before {
-      bottom: 0%;
-    }
-
-    .snip1499 li:after {
-      bottom: 75%;
-    }
-
-    .snip1499 a {
-      backface-visibility: hidden;
-      color: #e6e6e6;
-      display: block;
-      padding: 0.5em 1em;
-      position: relative;
-      text-align: center;
-      text-decoration: none;
-    }
-
-    .snip1499 a:hover {
-      color: #ffffff;
-    }
-
-    .snip1499 a:before {
-      bottom: 25%;
-    }
-
-    .snip1499 a:after {
-      bottom: 50%;
-    }
-
-    .snip1499 li:before,
-    .snip1499 li:after,
-    .snip1499 a:before,
-    .snip1499 a:after {
-      background-color: #962d22;
-      position: absolute;
-      height: 25%;
-      width: 100%;
-      left: 0;
-      content: '';
-      z-index: -1;
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
-      opacity: 0;
-      -webkit-transition: all 0.3s steps(4);
-      transition: all 0.3s steps(4);
-    }
-
-    .snip1499 li:hover:before,
-    .snip1499 li.current:before,
-    .snip1499 li:hover:after,
-    .snip1499 li.current:after,
-    .snip1499 li:hover a:before,
-    .snip1499 li.current a:before,
-    .snip1499 li:hover a:after,
-    .snip1499 li.current a:after {
-      -webkit-transform: translateX(0%);
-      transform: translateX(0%);
-      opacity: 1;
-    }
-
-    .snip1499 li:hover:before,
-    .snip1499 li.current:before {
-      -webkit-transition-delay: 0.225s;
-      transition-delay: 0.225s;
-    }
-
-    .snip1499 li:hover:after,
-    .snip1499 li.current:after {
-      -webkit-transition-delay: 0s;
-      transition-delay: 0s;
-    }
-
-    .snip1499 li:hover a:before,
-    .snip1499 li.current a:before {
-      -webkit-transition-delay: 0.15s;
-      transition-delay: 0.15s;
-    }
-
-    .snip1499 li:hover a:after,
-    .snip1499 li.current a:after {
-      -webkit-transition-delay: 0.075s;
-      transition-delay: 0.075s;
-    }
-
-    /* Demo purposes only */
-    body {
-      background-color: #212121;
-    </style>
-    <script>
-      /* Demo purposes only */
-      $(".hover").mouseleave(
-        function() {
-          $(this).removeClass("hover");
-        }
-      );
-    </script>
-    <ul class="snip1499">
-      <li class="current"><a href="index">首頁</a></li>
-      <li><a href="sponsor">贊助</a></li>
-      <li><a href="#">關於</a></li>
-    </ul>
-    <style>
-      ul li {
-        display: table;
-        margin: 0 auto;
-      }
-    </style>
+    <!--------------------------------------------------------------------------------主幕-------------------------------------------------------------------------------------->
+    <figure class="snip1579"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample74.jpg" alt="profile-sample2"/>
+      <figcaption>
+        <h3>Sue Shei</h3>
+        <h5>Founder</h5>
+        <blockquote>
+          <p>'Which is worse, that everyone has his price, or that the price is always so low.'</p>
+        </blockquote>
+      </figcaption><a href="#"></a>
+    </figure>
+    <figure class="snip1579 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample77.jpg" alt="profile-sample7"/>
+      <figcaption>
+        <h3>Indigo Violet</h3>
+        <h5>Web Designer</h5>
+        <blockquote>
+          <p>'I'm killing time while I wait for life to shower me with meaning and happiness.'</p>
+        </blockquote>
+      </figcaption><a href="#"></a>
+    </figure>
+    <figure class="snip1579"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample96.jpg" alt="profile-sample6"/>
+      <figcaption>
+        <h3>Will Barrow</h3>
+        <h5>Public Relations</h5>
+        <blockquote>
+          <p>'The only skills I have the patience to learn are those that have no real application in life.'</p>
+        </blockquote>
+      </figcaption><a href="#"></a>
+    </figure>
     <!-- 回到最上方 -->
       <button class="js-back-to-top back-to-top" title="回到頂部">&#65085;</button>
       <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
