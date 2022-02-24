@@ -74,9 +74,14 @@
       -ms-transform-origin: 100% 0;
       transform-origin: 100% 0;
       position: absolute;
-      top: 50%;
-      left: 50%;
+      top: 0;
+      left: 0;
       right: 50;
+      bottom: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 50%;
       bottom: 0;
       content: '';
       background-color: #69153a;
@@ -208,6 +213,11 @@
         left: 15px;
         right: 15px;
         bottom: 15px;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        right: 0;
+        bottom: 0;
         overflow: hidden;
         padding: 15px;
         background-color: rgba(0, 0, 0, 0.75);
