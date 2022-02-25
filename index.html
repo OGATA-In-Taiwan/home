@@ -75,7 +75,8 @@
       list-style: outside none none;
       margin: 0;
       position: relative;
-      float: left;
+      float: right; /* left */
+      z-index: 99; /* 確保不被其他功能覆蓋 */
     }
 
     .snip1490 > li {
@@ -355,7 +356,7 @@
         background-color: transparent; /* 設置背景背景顏色 */
         color: #5cb85c; /* 設置文本顏色 */
         cursor: pointer; /* 滑鼠移到按鈕上顯示手型 */
-        padding: 10px 15px 15px 15px; /* 增加一些內邊距 */
+        padding: 10px 15px 12px 15px; /* 增加一些內邊距 */
         border-radius: 10px; /* 增加圓角 */
         }
         .back-to-top:hover {
