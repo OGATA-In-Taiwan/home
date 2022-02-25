@@ -39,8 +39,19 @@
     <span style= "display:block">
       <img src="img/logo(new).png"  width="192.5" height="95" style="float: left;">
     </span>
+    <!-- 空區塊 -->
+    <p>
+      <div style="width:900px;height:95px;border:3px #cccccc dashed; position: relative;"></div>
+    </p>
+    <!-- 空區塊css -->
+    <style>
+      p {
+        position:relative;
+        left:900px
+      }
+    </style>
     <!-- 導覽列 -->
-    <div style="width:900px;height:95px;border:3px #cccccc dashed;">
+    <font color="#fff">
       <ul class="snip1490" style="float:right;">
         <li class="current"><a href="index">首頁</a></li>
         <li><a href="sponsor">贊助</a></li>
@@ -61,7 +72,7 @@
         <li><a href="#">旗下</a></li>
         <li><a href="#">關於</a></li>
       </ul>
-    </div>
+    </font>
     <!-- 導覽列css -->
     <style>
     @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
@@ -71,7 +82,7 @@
       text-align: left;
       text-transform: uppercase;
       font-weight: 300;
-      /* background-color: #eee; */
+      background-color: #eee;
       display: inline-block;
       padding: 0;
       letter-spacing: 2px;
@@ -91,7 +102,7 @@
       margin: 0;
       position: relative;
       float: left;
-      z-index: 99; /* 確保不被其他功能覆蓋 */
+      /* z-index: 99; /* 確保不被其他功能覆蓋 */
     }
 
     .snip1490 > li {
