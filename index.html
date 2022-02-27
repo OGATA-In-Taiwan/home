@@ -22,10 +22,6 @@
      crossorigin="anonymous"></script>
     <!-- 背景 -->
     <body bgcolor="#ffffff">
-    <!-- icon圖片 -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
-     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
-    crossorigin="anonymous"/>
   </head>
   <body>
     <!-- 背景音樂 -->
@@ -487,13 +483,17 @@
         bottom: 20px; /* 顯示在頁面底部 */
         right: 30px; /* 顯示在頁面的右邊 */
         z-index: 99; /* 確保不被其他功能覆蓋 */
-        border: 1px solid #000; /* 顯示邊框 */
+        border: 2px solid #000; /* 顯示邊框 */
         outline: none; /* 不顯示外框 */
         background-color: #fff; /* 設置背景背景顏色 */
         color: #000; /* 設置文本顏色 */
         cursor: pointer; /* 滑鼠移到按鈕上顯示手型 */
         padding: 10px 15px 15px 15px; /* 增加一些內邊距 */
         border-radius: 100px; /* 增加圓角 */
+        }
+        .back-to-top:hover {
+        background-color: #434343; /* 滑鼠移上去時，反轉顏色 */
+        color: #fff;
         }
       </style>
       <script>
