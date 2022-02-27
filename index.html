@@ -22,8 +22,28 @@
      crossorigin="anonymous"></script>
     <!-- 背景 -->
     <body bgcolor="#ffffff">
+    <!-- RWD -->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
   </head>
   <body>
+    <!-- 手機(直向) RWD css -->
+    @media (min-width: 360px) and (min-height: 640px) {
+      p {
+        font-size: 20px;
+      }
+    }
+    <!-- 手機(橫向) RWD css -->
+    @media (min-width: 640px) and (min-height: 360px) {
+      p {
+        font-size: 20px;
+      }
+    }
+    <!-- 平板(直向) RWD css -->
+    @media (min-width: 768px) and (min-height: 1024px) {
+      p {
+        font-size: 20px;
+      }
+    }
     <!-- 背景音樂 -->
     <audio autoplay="autoplay" controls="controls"loop="loop" preload="auto"
       src="music.mp3">
@@ -39,7 +59,7 @@
     <span class="logo-nav-css">
       <img src="img/logo(new).png"  width="192.5" height="95" style="float: left;">
     <!-- 導覽列 -->
-      <ul class="snip1490" style="float:right;">
+      <ul class="snip1490 wrap" style="float:right;">
         <li class="current"><a href="index">首頁</a></li>
         <li><a href="sponsor">贊助</a></li>
         <li><a href="#">博客</a></li>
@@ -201,6 +221,20 @@
       height: 95;
       background-color: #000;
       border-radius: 10px;
+    }
+      
+    .wrap {
+      text-align: center;
+    }
+
+    .wrap ul {
+      display: inline-block;
+    }
+    /*結束:ul若有父層，水平置中*/
+
+    .wrap li {
+      background-color: #CCC;
+      list-style-type: none;
     }
     </style>
     <!-- 視窗 -->
