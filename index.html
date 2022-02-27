@@ -26,7 +26,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <style>
+    <!-- <style>
     /* 手機(直向) RWD css */
     @media (min-width: 360px) {
       .wrap {
@@ -51,7 +51,7 @@
     @media (min-width: 768px) {
       
     }
-    </style>
+    </style> -->
     <!-- 背景音樂 -->
     <audio autoplay="autoplay" controls="controls"loop="loop" preload="auto"
       src="music.mp3">
@@ -64,7 +64,7 @@
         }
     </style>
     <!-- logo -->
-    <span class="logo-nav-css">
+    <span class="logo-nav-css wrap">
       <img src="img/logo(new).png"  width="192.5" height="95" style="float: left;">
     <!-- 導覽列 -->
       <ul class="snip1490" style="float:right;">
@@ -230,6 +230,20 @@
       background-color: #000;
       border-radius: 10px;
     }
+      
+    .wrap {
+        text-align: center;
+      }
+
+      .wrap ul {
+        display: inline-block;
+      }
+      /*結束:ul若有父層，水平置中*/
+
+      .wrap li {
+        background-color: #CCC;
+        list-style-type: none;
+      }
     </style>
     <!-- 視窗 -->
     <div class="nav" style="margin:0 auto;">
