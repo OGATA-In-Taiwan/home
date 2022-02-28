@@ -33,7 +33,11 @@
   </head>
   <body>
     <style>
-    /* 手機(直向) RWD css */
+    /* 手機(直向) RWD css*/
+    @media (min-width: 320px) {
+      
+    }
+    /* 手機(直向) RWD css 410px*/
     @media (min-width: 410px) {
       
       /* 背景音樂 */
@@ -165,6 +169,10 @@
         border-radius: 10px;
       }
       
+      .logo-css {
+        float: left;
+      }
+      
       .logo-nav-css {
         display: inline-block;
         position: relative;
@@ -174,6 +182,7 @@
         border-radius: 10px;
         display:flex; 
         justify-content: center;
+        float: right;
       }
       
       /* 視窗 */
@@ -403,6 +412,19 @@
         border-radius: 10px;
       }
       
+      .logo-css {
+        display: inline-block;
+        position: relative;
+        width: 100%; 
+        height: 95;
+        background-color: #000;
+        border-radius: 10px;
+        display:flex; 
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      }
+      
       .logo-nav-css {
         display: inline-block;
         position: relative;
@@ -412,6 +434,8 @@
         border-radius: 10px;
         display:flex; 
         justify-content: center;
+        display: flex;
+        align-items: center;
       }
       
       /* 視窗 */
@@ -515,7 +539,7 @@
     }
       
     /* 電腦 RWD css */
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       
       /* 背景音樂 */
       audio{
@@ -644,6 +668,10 @@
         opacity: 1;
         border-radius: 10px;
       }
+      
+      .logo-css {
+        float: left;
+      }
 
       .logo-nav-css {
         display: inline-block;
@@ -652,6 +680,7 @@
         height: 95;
         background-color: #000;
         border-radius: 10px;
+        float: right;
       }
       
       /* 視窗 */
@@ -755,10 +784,12 @@
       你的瀏覽器版本過低，不支援背景音樂。
     </audio>
     <!-- logo -->
-    <span class="logo-nav-css">
-      <img src="img/logo(new).png"  width="192.5" height="95" style="float: left;">
+    <span class="logo-css">
+      <img src="img/logo(new).png"  width="192.5" height="95">
+    </span>
     <!-- 導覽列 -->
-      <ul class="snip1490" style="float:right;">
+    <span class="logo-nav-css">
+      <ul class="snip1490">
         <li class="current"><a href="index">首頁</a></li>
         <li><a href="sponsor">贊助</a></li>
         <li><a href="#">博格</a></li>
