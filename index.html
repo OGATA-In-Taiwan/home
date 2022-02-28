@@ -34,7 +34,131 @@
   <body>
     <style>
     /* 手機(直向) RWD css */
-    @media (min-width: 414px) {
+    @media (min-width: 350px) {
+      /* 導覽列 */
+      @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+      @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+      .snip1490 {
+        font-family: 'Roboto', Arial, sans-serif;
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: 300;
+        display: inline-block;
+        padding: 0;
+        letter-spacing: 2px;
+        background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
+      }
+
+      .snip1490 *,
+      .snip1490 *:before {
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+
+      .snip1490 li {
+        display: inline-block;
+        list-style: outside none none;
+        margin: 0;
+        position: relative;
+        float: left;
+        z-index: 99;
+      }
+
+      .snip1490 > li:first-of-type {
+        border-left: none;
+      }
+
+      .snip1490 > li:last-of-type {
+        border-right: none;
+      }
+
+      .snip1490 a {
+        color: #ffffff;
+        display: block;
+        padding: 1.1em 2em 1.3em;
+        position: relative;
+        text-decoration: none;
+      }
+
+      .snip1490 a:hover {
+        color: #ffffff;
+      }
+
+      .snip1490 > li:before,
+      .snip1490 > li:after {
+        position: absolute;
+        content: '';
+      }
+
+      .snip1490 > li:before {
+        background-color: #fff;
+        left: 0;
+        right: 0;
+        bottom: 100%;
+        top: 0;
+        opacity: 0;
+      }
+
+      .snip1490 ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        margin: 0;
+        padding: 5px 0;
+        white-space: nowrap;
+        font-size: 0.8em;
+        background-color: #1c1c1c;
+        color: #fff;
+        font-weight: 400;
+        border-radius: 10px;
+      }
+
+      .snip1490 ul li {
+        display: list-item;
+        float: none;
+        position: relative;
+      }
+
+      .snip1490 ul li a {
+        padding: 0.8em 1.2em;
+        color: #ffffff;
+        text-transform: none;
+        opacity: 0.8;
+      }
+
+      .snip1490 ul li a:hover {
+        opacity: 1;
+      }
+
+      .snip1490 li:hover > ul {
+        display: inherit;
+      }
+
+      .snip1490 li > a:only-child:after {
+        content: '';
+      }
+
+      .snip1490 ul ul {
+        background-color: #434343;
+        top: 0px;
+        left: 100%;
+        list-style: none;
+        font-size: 1em;
+      }
+
+      .snip1490 > li:hover > a,
+      .snip1490 > li.current > a {
+        color: #000;
+      }
+
+      .snip1490 > li:hover:before,
+      .snip1490 > li.current:before {
+        bottom: 0;
+        opacity: 1;
+        border-radius: 10px;
+      }
+      
       .logo-nav-css {
         display: inline-block;
         position: relative;
@@ -44,7 +168,100 @@
         border-radius: 10px;
         display:flex; 
         justify-content: center;
-        z-index: 99;
+      }
+      
+      /* 視窗 */
+      @import url(https://fonts.googleapis.com/css?family=Lato);
+      @import url(https://fonts.googleapis.com/css?family=Oswald);
+      @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+      .snip1579 {
+        font-family: 'Lato', Arial, sans-serif;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        margin: 10px;
+        min-width: 250px;
+        max-width: 310px;
+        width: 100%;
+        background-color: #000000;
+        color: #ffffff;
+        text-align: left;
+        font-size: 16px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+        margin:0 auto;
+      }
+      .snip1579 * {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      .snip1579 img {
+        max-width: 100%;
+        vertical-align: top;
+      }
+      .snip1579 figcaption {
+        position: absolute;
+        height: 75px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        overflow: hidden;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.75);
+        border-radius: 10px;
+      }
+      .snip1579 h3 {
+        font-family: 'Oswald';
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 3px 0;
+      }
+      .snip1579 h5 {
+        font-weight: 400;
+        margin: 0;
+        text-transform: uppercase;
+        color: #bbb;
+        letter-spacing: 1px;
+      }
+      .snip1579 blockquote {
+        padding: 0;
+        margin: 0;
+        font-style: italic;
+        font-size: 1em;
+      }
+      .snip1579 a {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      .snip1579:hover figcaption,
+      .snip1579.hover figcaption {
+        height: calc(85%);
+      }
+      
+      /* 回到最上 */
+      .back-to-top {
+        display: none; /* 默認是隱藏的，這樣在第一屏才不顯示 */
+        position: fixed; /* 位置是固定的 */
+        bottom: 20px; /* 顯示在頁面底部 */
+        right: 30px; /* 顯示在頁面的右邊 */
+        z-index: 99; /* 確保不被其他功能覆蓋 */
+        border: 2px solid #000; /* 顯示邊框 */
+        outline: none; /* 不顯示外框 */
+        background-color: #fff; /* 設置背景背景顏色 */
+        color: #000; /* 設置文本顏色 */
+        cursor: pointer; /* 滑鼠移到按鈕上顯示手型 */
+        padding: 10px 15px 15px 15px; /* 增加一些內邊距 */
+        border-radius: 100px; /* 增加圓角 */
+        }
+      .back-to-top:hover {
+        background-color: #fff; /* 滑鼠移上去時，反轉顏色 */
+        color: #000;
       }
     }
       
