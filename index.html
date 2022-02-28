@@ -165,11 +165,6 @@
         display: inherit;
       }
 
-      .snip1490 li > a:after {
-        content: "\f107";
-        font-family: "Ionicons";
-      }
-
       .snip1490 li > a:only-child:after {
         content: '';
       }
@@ -307,11 +302,11 @@
     <span class="logo-nav-css">
       <img src="img/logo(new).png"  width="192.5" height="95" style="float: left;">
     <!-- 導覽列 -->
-      <ul class="snip1490 fa-ul" style="float:right;">
+      <ul class="snip1490" style="float:right;">
         <li class="current"><a href="index">首頁</a></li>
         <li><a href="sponsor">贊助</a></li>
         <li><a href="#">博客</a></li>
-        <li class="fa-li"><a href="#">清單</a>
+        <li><a href="#">清單</a>
           <ul>
             <li><a href="#">清單1</a></li>
             <li><a href="#">清單2</a>
@@ -477,7 +472,11 @@
     </div>
     <!-- 回到最上方 -->
       <button class="js-back-to-top back-to-top" title="回到頂部">
-        <span style="font-size: 18px; font-weight:bold; content: "\f107";">︽</span>
+        <span style="font-size: 18px; font-weight:bold;">
+          <span>
+            <i class="fa-solid fa-arrow-up"></i>
+          </span>
+        </span>
       </button>
       <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
       <script>
