@@ -191,45 +191,47 @@
       border-radius: 10px;
     }
     </style>
-    <!-- 回到最上方 -->
-      <button class="js-back-to-top back-to-top" title="回到頂部" style="font-size:15px; font-weight:bold;">︽</button>
-      <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
-      <style>
-        .back-to-top {
-        display: none; /* 默認是隱藏的，這樣在第一屏才不顯示 */
-        position: fixed; /* 位置是固定的 */
-        bottom: 20px; /* 顯示在頁面底部 */
-        right: 30px; /* 顯示在頁面的右邊 */
-        z-index: 99; /* 確保不被其他功能覆蓋 */
-        border: 2px solid #000; /* 顯示邊框 */
-        outline: none; /* 不顯示外框 */
-        background-color: #fff; /* 設置背景背景顏色 */
-        color: #000; /* 設置文本顏色 */
-        cursor: pointer; /* 滑鼠移到按鈕上顯示手型 */
-        padding: 10px 15px 15px 15px; /* 增加一些內邊距 */
-        border-radius: 100px; /* 增加圓角 */
-        }
-        .back-to-top:hover {
-        background-color: #434343; /* 滑鼠移上去時，反轉顏色 */
-        color: #fff;
-        }
-      </style>
+    <!-- Messenger 洽談外掛程式 Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your 洽談外掛程式 code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "107673648487793");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
       <script>
         $(function () {
         var $win = $(window);
-        var $backToTop = $('.js-back-to-top');
+        var $nav = $('.logo-nav-css');
       // 當用戶滾動到離頂部100像素時，展示回到頂部按鈕
         $win.scroll(function () {
         if ($win.scrollTop() > 100) {
-        $backToTop.show();
+        $nav.show();
         } else {
-        $backToTop.hide();
+        $nav.hide();
         }
-        });
-      // 當用戶點擊按鈕時，通過動畫效果返回頭部
-        $backToTop.click(function () {
-        $('html, body').animate({scrollTop: 0}, 200);
-        });
         });
       </script>
     <!-- 變化js -->
